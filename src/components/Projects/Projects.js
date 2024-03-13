@@ -22,7 +22,7 @@ function Projects() {
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={cicd}
-              isBlog={false}
+              isBlog={true}
               title="Complete CI/CD Pipeline"
               description="Complete pipeline using jenkins,Sonarqube, Trivy, OWSAP, Docker, AgroCD, Helm, Kubernetes etc"
               demoLink="https://medium.com/@patel.abhishek7064/deploy-netflix-clone-ci-cd-on-aws-eks-devsecops-practices-b3707dfb4d8f"
