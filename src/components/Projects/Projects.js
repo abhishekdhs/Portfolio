@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import djangoRealEstate from "../../Assets/Projects/django-real-estate.png";
 import amazon from "../../Assets/Projects/amazon.png";
 import djangoProfileApi from "../../Assets/Projects/django-profile-api.png";
+import cicd from "../../Assets/Projects/cicd.png";
 
 function Projects() {
   return (
@@ -18,6 +19,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cicd}
+              isBlog={false}
+              title="Complete CI/CD Pipeline"
+              description="Complete pipeline using jenkins,Sonarqube, Trivy, OWSAP, Docker, AgroCD, Helm, Kubernetes etc"
+              ghLink="https://medium.com/@patel.abhishek7064/deploy-netflix-clone-ci-cd-on-aws-eks-devsecops-practices-b3707dfb4d8f"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={djangoRealEstate}
@@ -34,7 +45,7 @@ function Projects() {
               isBlog={false}
               title="Amazon react Clone"
               description="CLone of amazon home page using react js with well structured componenets and reusable code."
-              ghLink="https://github.com/abhishekdhs/amazon-clone-django-react"
+              demoLink="https://github.com/abhishekdhs/amazon-clone-django-react"
             />
           </Col>
 
