@@ -25,7 +25,7 @@ function Projects() {
               isBlog={false}
               title="Complete CI/CD Pipeline"
               description="Complete pipeline using jenkins,Sonarqube, Trivy, OWSAP, Docker, AgroCD, Helm, Kubernetes etc"
-              ghLink="https://medium.com/@patel.abhishek7064/deploy-netflix-clone-ci-cd-on-aws-eks-devsecops-practices-b3707dfb4d8f"
+              demoLink="https://medium.com/@patel.abhishek7064/deploy-netflix-clone-ci-cd-on-aws-eks-devsecops-practices-b3707dfb4d8f"
             />
           </Col>
 
@@ -45,7 +45,7 @@ function Projects() {
               isBlog={false}
               title="Amazon react Clone"
               description="CLone of amazon home page using react js with well structured componenets and reusable code."
-              demoLink="https://github.com/abhishekdhs/amazon-clone-django-react"
+              ghLink="https://github.com/abhishekdhs/amazon-clone-django-react"
             />
           </Col>
 
