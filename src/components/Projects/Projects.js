@@ -5,7 +5,9 @@ import Particle from "../Particle";
 import djangoRealEstate from "../../Assets/Projects/django-real-estate.png";
 import amazon from "../../Assets/Projects/amazon.png";
 import djangoProfileApi from "../../Assets/Projects/django-profile-api.png";
-import cicd from "../../Assets/Projects/cicd.png";
+import cicd from "../../Assets/Projects/cicd2.png";
+import route53 from "../../Assets/Projects/route53.png";
+import terraform from "../../Assets/Projects/terraform.png";
 
 function Projects() {
   return (
@@ -22,17 +24,33 @@ function Projects() {
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={cicd}
-              isBlog={true}
               title="Complete CI/CD Pipeline"
-              description="Complete pipeline using jenkins,Sonarqube, Trivy, OWSAP, Docker, AgroCD, Helm, Kubernetes etc"
+              description="Complete pipeline using jenkins,Sonarqube, Trivy, OWSAP, Docker, AgroCD, Helm, Kubernetes etc. For more details checkout my medium stories and feel free to write any suggestions or errors."
               demoLink="https://medium.com/@patel.abhishek7064/deploy-netflix-clone-ci-cd-on-aws-eks-devsecops-practices-b3707dfb4d8f"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={route53}
+              title="Connecting an external domain to AWS Route53 + ACM"
+              description="A Blog on how to join an external domain to aws using route 53 and how we can use ACM for secure connections."
+              demoLink="https://medium.com/@patel.abhishek7064/route53-dns-subdomain-delegation-with-godaddy-aws-cert-manager-0a0d1e11fd8b"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={terraform}
+              title="Terraform 3 tier Architecture"
+              description="A small Project that shows how can we write terraform code to build a 3 tier architecture using existing aws terraform modules."
+              ghLink="https://github.com/abhishekdhs/Terraform-AWS-VPC-3-Tier-Architecture"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={djangoRealEstate}
-              isBlog={false}
               title="Django Real estate"
               description="A project with python django used templating to create a admin panned and a website to search for the real estate properties with login features."
               ghLink="https://github.com/abhishekdhs/Real_Estate-Python-Django"
@@ -42,7 +60,6 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={amazon}
-              isBlog={false}
               title="Amazon react Clone"
               description="CLone of amazon home page using react js with well structured componenets and reusable code."
               ghLink="https://github.com/abhishekdhs/amazon-clone-django-react"
@@ -52,7 +69,6 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={djangoProfileApi}
-              isBlog={false}
               title="Django Custom Profile Api"
               description="A custom profile API built for django that can be used to customize the login methods with email and passwords and much more."
               ghLink="https://github.com/abhishekdhs/profiles-rest-api"            
